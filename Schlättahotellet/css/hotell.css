@@ -13,6 +13,7 @@ body{
     "header header header header header"
     "main main main main main"
     "footer footer footer footer footer";
+    overflow-x: hidden;
 }
 
 header{
@@ -101,6 +102,24 @@ header .boka-btn:hover{
     color: snow;
 }
 
+/* Active */
+
+.active{
+    background-color: #7F9172;
+}
+
+.menu-wrap .menu > div > div > ul > li.active-mobile{
+    color:#7F9172;
+}
+
+.menu-wrap .menu > div > div > ul > li.active-boka{
+    color: #2F2F2F;
+}  
+
+.active-boka{
+    color: #2F2F2F;
+}
+
 /* Main */
 
 .img-slider{
@@ -145,13 +164,13 @@ header .boka-btn:hover{
     left: 50%;
     color: snow;
     transform: translate(-50%,-50%);
-    font-size: xx-large;
+    font-size: 3vw;
     letter-spacing: 0.094rem;
     text-align: center;
 }
 
 .img-slider-text h2{
-    font-size: 2rem;
+    font-size: 3vw;
     text-align: center;
     padding: 0.5rem 1rem;
 }
@@ -390,7 +409,7 @@ img {
     height: 100%;
 }
 
-/* --------Boka-html-------- */
+/* Boka-html */
 
 .boka-main{
     background-image: url("../img/nature-3358233_1920.jpg");
@@ -416,7 +435,6 @@ img {
 
 .boka-form-outline{
     border: 0.063rem solid snow;
-    width: inherit;
     padding: 2rem;
     background-color: rgba(47,47,47,0.9);
     margin: 0 auto;
@@ -681,8 +699,6 @@ footer > div{
     .footer-right iframe{
         width: 70vw;
     }
-
-
 }
 
     /* Boka */
@@ -690,13 +706,18 @@ footer > div{
 @media screen and (max-width: 53.125rem) {
 
     .boka-main > div{
-        flex: 0 1 100%;
-        width: 100vw;
+        flex: 1 0 100%;
     }
 
     .boka-main{
         padding: 0;
     }
 
+    .img-slider-text{
+        font-size: 4vw;
+    }
 
+    .img-slider-text h2{
+        font-size: 4vw;
+    }
 }
